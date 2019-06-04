@@ -1,0 +1,130 @@
+<div class="container">
+    <div class="header">
+      </div>
+  
+  <nav>
+      
+  <ul>
+   
+      <li><a href="home" class="current" data-hover="Home">Home</a></li>
+      <li><a href="room-rates" data-hover="Rooms & Rates">Rooms & Rates</a></li>
+      <li><a href="about" data-hover="viewReservation">Reservation</a></li>
+      <li><a href="contact" data-hover="Contact">Contact</a></li>
+  </ul>
+</nav>
+
+	<div class="gallery cf">
+		<div class="image" *ngFor="let room of rooms">
+			<figure>
+        <img src="{{room.image}}" alt=""  width ="50%" height="50%"/>
+       
+        <p>{{room.name}}</p>
+        <p>{{room.price}}</p>
+        <p>{{room.description}}</p>
+        
+			</figure>
+      <figcaption>
+        <div class ="col-md-4 col lg-4">
+          <h5 class ="card-title"></h5>
+         
+          
+          <p class ="card-text">
+         
+            </p>
+            </div>
+          
+         
+       <button type ="submit " (click)="res1(i=0)" >Book now </button> 
+     
+      </figcaption>  
+		</div> 
+  </div> 
+ 
+  
+
+  
+  
+  
+  
+   
+   
+    <div id = "form">
+    
+    <label>Number of Days</label>
+    <td>
+   
+    <input type = "text" [(ngModel)] = "flo.days">
+    </td>
+    <label>Number of Adults</label>
+    <td>
+    <input type = "text" [(ngModel)] = "flo.adult">
+    </td>
+    <label>Number of Children</label>
+    <td>
+   
+    <input type = "text" [(ngModel)] = "flo.child">
+   
+    </td>
+    <td>
+    <button (click) = "enter()">ENTER</button>
+    </td>
+    
+    <td>
+    <button (click) = "vc()" >VIEW COST</button>
+    </td>
+    <td>
+    <label>COST</label>
+    <br>
+    <input type = "text" [(ngModel)] = "flo2.cost" readonly>
+    </td>
+    
+   
+    </div>
+   
+    <div id = "last" height = "700">
+    <table>
+    <td>
+    
+   
+     <tr  >
+     <td *ngFor = "let dept of departments;let z = index"> <img  src = "{{dept.name}}" width = "200" height = "200" (click) = "view(z)"> </td>
+     </tr>
+     
+   
+   
+    
+    </td>
+    
+    <div  id = "form2">
+     <h1><p>Booking</p></h1>
+     <label>Enter your Name</label>
+     <br>
+     <input [(ngModel)] = "api.name" type = "text">
+     <br>
+     <label>Enter your Surname</label>
+     <br>
+     <input type = "text" [(ngModel)] = "api.surname">
+     <br>
+     <label>Enter your Email Address</label>
+     <br>
+     <input type = "text" [(ngModel)] = "api.email">
+    <br>
+   
+    <button (click) = "save()" >Confirm Booking</button>
+    <br>
+    <label>The Total Amount</label>
+    <br>
+    <input type = "text" [(ngModel)] = "flo2.cost" readonly>
+    <br>
+   
+    <pre *ngFor = "let details of rez; let d = index" >
+    Thank you {{details.name}} {{details.surname}} your booking has been reserved.
+    A confirmation email has been sent to {{details.email}}.
+    </pre>
+   
+    </div>
+    
+    </table>
+   
+   </div>
+</div>

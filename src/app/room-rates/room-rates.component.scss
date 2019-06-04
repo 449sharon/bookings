@@ -1,0 +1,198 @@
+
+
+*{
+    margin: 0;
+    padding:0;
+  }
+  .cf:before,.cf:after{
+    content: '';  
+    display: table;
+  }
+  .cf:after{
+    clear:both;    
+  }
+  h1{
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10px;
+    color:#444;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 14px;
+  }
+  .container{
+    background-image: url('../../assets/beachside.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 50px auto;
+    max-width: 80%;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border:1px solid #c5c5c5;
+  }
+  .Cform{
+    width: 700px;
+    margin: auto;
+  text-align: center;
+}
+.forms-column{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+}
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+  color:whitesmoke;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  
+}
+
+th, td {
+  padding: 5px 15px;
+  
+}
+  
+  .gallery{
+    width: 100%;
+   
+  }
+  
+  .image{
+    /* float:left not working in mozilla*/
+    display: inline-block;
+    padding: 2%;
+    background-color: #fff;
+    margin: 1%;
+    width: 18%;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    text-align: center;  
+    border:1px solid #c3c3c3;
+    cursor: pointer;
+  }
+  
+  .image figure{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  
+  .image figure img{
+    width: 100%;
+  }
+  
+  figcaption{
+    background-color: rgba(0,0,0,0.8);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+    font-family: sans-serif;
+    cursor: pointer;
+    color: slategrey;
+    max-width:100%;
+    font-weight: bold;
+  }
+  
+  figcaption:hover{
+    color: #fff;
+  }
+  nav {
+    background: rgba(233,233,233, 0.8);
+    margin: 3em 2rem;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+  }
+  
+  nav ul li a {
+    display: inline-block;
+    padding: 1rem;
+    color: #000;
+    text-decoration: none;
+    transition: transform 0.3s ease 0s;
+    transform-origin: 50% 0px 0px;
+    transform-style: preserve-3d;
+  }
+  
+  nav ul li a.current {
+    color: #7AB1C1;
+  }
+  
+  nav ul li a:hover {
+    background: rgba(233,233,233, 0.8);
+    color: #000;
+    transform: rotateX(90deg) translateY(-22px);
+  }
+  
+  nav ul li a::before {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 100%;
+    padding: 4px 0px;
+    text-align: center;
+    line-height: 50px;
+    background: none repeat scroll 0% 0% #7AB1C1;
+    color: #FFF;
+    content: attr(data-hover);
+    transition: #6363CE 0.3s ease 0s;
+    transform: rotateX(-90deg);
+    transform-origin: 50% 0px 0px;
+  }
+  .header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+  }
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+    text-align: right;
+  }
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  .Uform{
+    width: 700px;
+    margin: auto;
+  text-align: center;
+  color:whitesmoke;
+  }
+
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  

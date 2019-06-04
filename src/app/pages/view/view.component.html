@@ -1,0 +1,46 @@
+
+      <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+      <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+      <!------ Include the above in your HEAD tag ---------->
+      
+      <div class="container">
+        <div class="row">
+          <h2 style =color:indianred>More Information on the rooms</h2>
+        </div>
+<div class="row">
+  <fieldset class="for-panel">
+  
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-horizontal"> 
+            <img src="{{room.image}}"   class="card-img-top" alt="card image cap" width="400px" height="400px">              
+            <label class="col-xs-5 control-label">Name:</label>
+            <p class="form-control-static">{{room.name}}</p>               
+            <label class="col-xs-5 control-label">Price: </label>
+            <p class="form-control-static">{{room.price}}</p>               
+               
+            <label class="col-xs-5 control-label">Description:</label>
+            <p class="form-control-static" style="margin-left: 220px">{{room.description}}</p>
+   
+        
+        <button (click)="make(room.name , room.price )" class="btn btn-primary"> book now </button>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        
+          <div class="form-horizontal">               
+              <label class="col-xs-4 control-label"> </label>
+              <p class="form-control-static"> <img src="{{room.image2}}"   class="card-img-top" alt="card image cap" width="300px" height="150px"> </p>             
+              <label class="col-xs-4 control-label"></label>
+              <p class="form-control-static"> <img src="{{room.image3}}"   class="card-img-top" alt="card image cap" width="300px" height="150px"> </p>              
+             
+                        
+                
+          </div>
+        </div>
+      </div>
+ 
+    </fieldset>
+</div>
+</div>

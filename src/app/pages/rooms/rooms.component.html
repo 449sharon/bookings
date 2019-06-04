@@ -1,0 +1,17 @@
+<div class="container">
+  
+<!-- Image and text -->
+<h2 style ="color:rebeccapurple">The Lodge Rooms</h2><hr style="background-color: #dddddd;"><br>
+<div class="row">
+<div class="card" style="width: 18rem; border: 1px solid #dddddd;"  *ngFor="let n of roomList | searchRooms: searchRoomsByName">
+<a routerLink="/view/{{ n.id }}"><img [src]="n.image" class="card-img-top" alt="..."></a>
+<div class="card-body">
+  <h5 class="card-title">{{n.name}}</h5>
+  <p class="card-text">{{n.price}}</p>
+ 
+
+</div>
+</div> 
+</div>
+</div>
+<router-outlet></router-outlet>

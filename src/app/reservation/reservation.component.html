@@ -1,0 +1,58 @@
+<div class="gallery cf">
+		<div class="image" *ngFor="let room of rooms">
+			<figure>
+        <img src="{{room.image}}" alt=""  width ="50%" height="50%"/>
+       
+        <p>{{room.name}}</p>
+        <p>{{room.price}}</p>
+        <p>{{room.description}}</p>
+        
+			</figure>
+      <figcaption>
+        <div class ="col-md-4 col lg-4">
+          <h5 class ="card-title"></h5>
+         
+          
+          <p class ="card-text">
+         
+            </p>
+            </div>
+          
+          
+       <button type ="submit " (click)="res1(i=0)" >Book now </button> 
+     
+      </figcaption>  
+    </div>
+    <div id = "form">
+    
+        <th><label>Number of Days</label></th>
+        <td>
+       
+        <input type = "text" [(ngModel)] = "flo.days">
+        </td>
+        <th><label>Number of Adults</label></th>
+        <td>
+        <input type = "text" [(ngModel)] = "flo.adult">
+        </td>
+        <th><label>Number of Children</label></th>
+        <td>
+       
+        <input type = "text" [(ngModel)] = "flo.child">
+       
+        </td>
+        <td>
+        <button (click) = "enter()">ENTER</button>
+        </td>
+        <tr>
+        <td>
+        <button (click) = "vc()" >VIEW COST</button>
+        </td>
+        <td>
+        <label>COST</label>
+        <br>
+        <input type = "text" [(ngModel)] = "flo2.cost" readonly>
+        </td>
+        </tr>
+       
+        </div>
+    

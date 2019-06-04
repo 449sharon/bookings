@@ -1,0 +1,52 @@
+<div class="container">
+   
+  
+  <div class="wrapper">
+    	
+<header id="header">
+  
+  <h1 style ="color:plum">The lodge</h1>
+  <br>
+<br>
+  <form class=""  (submit)="loginUser($event)">
+    <h3 >Log In</h3>
+    <div *ngIf="error != ''"><p class="error"  ><strong></strong><br><span>{{error}}</span></p></div>
+    <small><a href="#" class="fpassword">Forgot Password</a></small>
+      <div class="form-group">
+        <div class="feedback"><i class="fas fa-user"></i></div>
+        <input type="text" placeholder="Username" id="username" required>
+      </div>
+      <div class="form-group">
+          <div class="feedback"><i class="fas fa-lock"></i></div>
+        <input type="password" placeholder="Password" id="password" required>
+      </div>
+      <div class="form-group"><br>
+        <button type="submit" class="btn-submit">
+            <i class="fas fa-sign-in-alt" style="font-size:15px"></i> Log In
+        </button>
+      </div>
+      <br><small><a routerLink="/rooms" class="fpassword">do not have an account? <strong>Sign Up</strong></a></small>
+  </form>
+</header>
+<!-- Jssor Slider End -->
+
+<div class="colab" style="width:100%" >
+<h2><u>Who We Are</u></h2>
+<p style="color:ivory; margin-left:3%"> Come and experience the warmth and hospitality in the NEWEST and ONE of the FINEST hotels in Johannesburg
+<br><br>
+Description
+The newest hotel in Johannesburg nestled along the highway towards the city from the airport. It has a relaxing pool at the back of its hotel where guests can truly enjoy the hassle-free accommodation and relaxation. 
+To provide guests a calm, modest, charm and cozy ambiance, 
+<br><br>
+It has superior, comfortable, elegant, clean and fully-air conditioned rooms with flat screen cable television and hot-and cold water shower rooms where some rooms have private balcony, with spectacular view of the pool area. All rooms are at affordable rates. 
+<br><br>
+To provide an ideal venue for conferences, training, seminars, and assessment meetings, the Empress hall equipped with an LCD projector,
+a state-of-the art audio visual equipment and Wi-fi internet access which can accommodate 100-200 persons, is ready to serve. 
+It has also Duchess hall, an open air hall beside the pool fully equipped with audio-visual facilities and wireless internet connection which can 
+house comfortably 50-100 persons.
+</p>
+</div>
+
+  </div>
+
+</div>

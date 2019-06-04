@@ -1,0 +1,16 @@
+.container {
+    padding: 40px;
+    margin: 0 auto;
+    position: relative;
+    max-width: 900px;
+    box-shadow: 0 0 3px #ddd;
+   
+}
+.row {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+img {
+    width: 100%;
+}
